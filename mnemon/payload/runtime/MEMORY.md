@@ -1,0 +1,1 @@
+dsh-web-ui 全家桶源码已迁移到 /Users/liuyongze/Library/Application Support/Open Design/namespaces/release-stable/data/projects/cde5c6f0-c24d-446a-90b9-dc254f092925/dsh-client/dsh-web-ui（DeepSeek Harness 客户端开发工程内）。AI-agent 原目录已删。22-23 个插件软链（~/.dsh/profiles/node_modules/@linxin666/）已同步重链指向新路径，均可用。若损坏，重链命令：rm 软链并 ln -s "<新路径>/packages/<子包>" <profile>/<软链名>（absolute 路径）。
