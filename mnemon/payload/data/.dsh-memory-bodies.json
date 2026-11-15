@@ -1,4 +1,13 @@
 {
   "version": 1,
-  "bodies": []
+  "bodies": [
+    {
+      "id": "default",
+      "name": "Codex 共享记忆",
+      "description": "从 Codex 同步的长期有效用户偏好、项目背景与决策；优先存放可跨会话复用的事实，排除密钥、令牌、Cookie、短期状态与未核实结论。",
+      "active": true,
+      "createdAt": "2026-10-30T10:53:01.227Z",
+      "updatedAt": "2026-11-08T10:22:52.877Z"
+    }
+  ]
 }

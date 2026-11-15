@@ -2,10 +2,10 @@
   "format": "mnemonpack",
   "version": 1,
   "scope": "full",
-  "exportedAt": "2026-10-30T07:46:32.249Z",
+  "exportedAt": "2026-11-15T05:08:36.396Z",
   "source": {
     "plugin": "dsh-mnemon",
-    "pluginVersion": "0.5.37"
+    "pluginVersion": "0.5.45"
   },
   "components": [
     "runtime",
@@ -16,32 +16,39 @@
     {
       "component": "runtime",
       "files": 3,
-      "bytes": 1410,
-      "items": 1
+      "bytes": 17611,
+      "items": 9
     },
     {
       "component": "documents",
-      "files": 1,
-      "bytes": 38,
-      "items": 0
+      "files": 38,
+      "bytes": 235360,
+      "items": 37
     },
     {
       "component": "memory-spaces",
-      "files": 1,
-      "bytes": 35,
-      "items": 0
+      "files": 2,
+      "bytes": 221611,
+      "items": 1
     }
   ],
   "sync": {
     "channel": "git",
     "branch": "mnemon-sync",
     "subdir": "mnemon/",
-    "pushedAt": "2026-10-30T07:46:32.249Z",
+    "pushedAt": "2026-11-15T05:08:36.396Z",
     "machine": {
       "id": "f333f251-8471-4b17-8797-f691ca87c181",
-      "label": "MacBook-Pro-3794.local",
+      "label": "MacBook-Pro-4150.local",
       "createdAt": "2026-10-29T11:45:45.679Z"
     },
-    "tombstones": []
+    "tombstones": [
+      {
+        "target": "memory",
+        "contentHash": "960281917b6822b414f175541c976e2f8f1661e4206e61b83116ad8065dee97f",
+        "deletedAt": "2026-11-15T05:08:36.359Z",
+        "machine": "f333f251-8471-4b17-8797-f691ca87c181"
+      }
+    ]
   }
 }

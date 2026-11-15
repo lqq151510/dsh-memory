@@ -1,4 +1,873 @@
 {
   "version": 1,
-  "documents": []
+  "documents": [
+    {
+      "id": "b05ca3a1-8032-4e48-b292-8ac82c7cc546",
+      "title": "Claude Splash 蟹鲸对决动画实现要点",
+      "description": "claude-splash 整屏动画的随机对决编排、鲸鱼镜像朝向、换位/瞬移特效、末日层挂载与单文件组件回归验证方法。",
+      "status": "active",
+      "filename": "claude-splash-b05ca3a1.md",
+      "relativePath": "documents/active/claude-splash-b05ca3a1.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "093793f0-9b8a-449b-8590-92d5c9f07667"
+      ],
+      "createdAt": "2026-10-30T11:23:10.732Z",
+      "updatedAt": "2026-10-30T11:23:10.732Z",
+      "lastAccessedAt": "2026-11-05T07:09:26.148Z",
+      "revision": 1,
+      "contentHash": "0ab2ffb6b61ab759cb3b357fb869ac6cd0637348341a0f874bd205814260ec93",
+      "sizeBytes": 4600,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "a8ec51cb-79f4-4373-ada6-c9afeec3170c",
+      "title": "Claude Splash 视觉与音效打磨：去白闪、暗夜幕、合成音效与双色激光",
+      "description": "claude-splash 对决动画的观感/听感打磨记录：全屏白光根因与边缘发光替代、is-doom 夜幕混合与文字可读性、Web Audio 分层合成信号链与自动播放解锁、PASS/FAIL 代码芯片、按阵营配色的远程激光，以及 crispEdges 像素闪烁的合成层修复与校验手段。",
+      "status": "active",
+      "filename": "claude-splash-a8ec51cb.md",
+      "relativePath": "documents/active/claude-splash-a8ec51cb.md",
+      "sourcePaths": [
+        ".dsh/profiles/desktop/node_modules/@local/claude-splash/client.js"
+      ],
+      "sessionIds": [
+        "2812b1b6-6915-4ef8-b5e2-93058618fa4a"
+      ],
+      "createdAt": "2026-10-30T11:39:53.650Z",
+      "updatedAt": "2026-10-30T11:39:53.650Z",
+      "lastAccessedAt": "2026-11-07T18:18:49.514Z",
+      "revision": 1,
+      "contentHash": "854aef7a52e2b788773ff7a2bc122eded9879b4af84a76eff3de0701496b0a31",
+      "sizeBytes": 7181,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "63c07518-ac7e-4277-801f-e1d49a7b8911",
+      "title": "Claude Splash：PASS/FAIL 音色重做与「动画消失」排障记录",
+      "description": "claude-splash 单文件 client 插件的两项本轮结论：PASS/FAIL 音效从同模板改为一听可辨的两种构成，并把文案与音色统一到同一 verdict 函数；以及「开屏动画不见了」的只读排障路径（一次性生命周期、boot 日志位置、ESM 桩渲染复核）。",
+      "status": "active",
+      "filename": "claude-splash-pass-fail-63c07518.md",
+      "relativePath": "documents/active/claude-splash-pass-fail-63c07518.md",
+      "sourcePaths": [
+        ".dsh/profiles/desktop/node_modules/@local/claude-splash/client.js"
+      ],
+      "sessionIds": [
+        "3e82ad8a-5939-44d0-9406-2658d6a31f3b"
+      ],
+      "createdAt": "2026-10-30T11:51:27.335Z",
+      "updatedAt": "2026-10-30T11:51:27.335Z",
+      "lastAccessedAt": "2026-11-06T10:39:41.057Z",
+      "revision": 1,
+      "contentHash": "e8a8048be0d997b1cb706bed0f09001f4147a5759bfb20b8721d192d4af35720",
+      "sizeBytes": 5391,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "714f4151-3039-4e36-86c3-b880e625273b",
+      "title": "Claude Splash：螃蟹变蓝的 token 覆盖根因与配色定位方法",
+      "description": "claude-splash 开屏螃蟹/Claude 侧元素变蓝的根因链（--csp-accent 绑定宿主 --dsw-alias-brand-primary，皮肤配置 brand: deepseek 注入 #4d6bfe）、最小修复与派生色表，附像素蟹图宽度校验失败与 makeSoundtrack 未声明变量导致整树不渲染的两处连带修复及验证手段。",
+      "status": "active",
+      "filename": "claude-splash-token-714f4151.md",
+      "relativePath": "documents/active/claude-splash-token-714f4151.md",
+      "sourcePaths": [
+        "Desktop/dsh-plugins/claude-splash/client.js"
+      ],
+      "sessionIds": [
+        "9b3f9072-eab2-4d0f-bb82-ac542c460010"
+      ],
+      "createdAt": "2026-10-30T12:28:17.581Z",
+      "updatedAt": "2026-10-30T12:28:17.581Z",
+      "lastAccessedAt": "2026-11-07T18:18:49.514Z",
+      "revision": 1,
+      "contentHash": "0e601da1757ae641956e37ee4996cb1dd09c8ec1601118e5a767b175aa32b8eb",
+      "sizeBytes": 5420,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "262061dc-c0b6-4d8e-a545-b3bf283c2fc4",
+      "title": "Claude Splash：远程对射拉距与末日层「减崩坏」调参记录",
+      "description": "claude-splash 对决动画本轮的两个需求落地记录：激光改为「冲撞→后撤到位→开火」并把站位/光束外扩到 56–64vmin 间距；裂纹/落石/灰烬/红雾减量且推迟到打斗结束后，新增 .csp-shield 暖光护体；附真实关键帧插值 + 无头 CDP 抽样验证方法与两个踩坑（viewBox 小写、ESM ?r= 缓存查询）。",
+      "status": "active",
+      "filename": "claude-splash-262061dc.md",
+      "relativePath": "documents/active/claude-splash-262061dc.md",
+      "sourcePaths": [
+        "Desktop/dsh-plugins/claude-splash/client.js"
+      ],
+      "sessionIds": [
+        "8da8ec15-fa88-43e9-99c0-562c7a813e6b"
+      ],
+      "createdAt": "2026-10-30T14:42:49.839Z",
+      "updatedAt": "2026-10-30T14:42:49.839Z",
+      "lastAccessedAt": "2026-11-05T14:45:36.902Z",
+      "revision": 1,
+      "contentHash": "94e6420e52beaa81d137c3fe1930e1621c4a4497d6f65dbe011e9e7de0048df9",
+      "sizeBytes": 4915,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "b90e1e5f-08c3-4d96-9a7f-075e33de2c97",
+      "title": "OpenClaw 提示词瘦身：技能目录才是 token 大头（实测配置与坑）",
+      "description": "降低 OpenClaw 每轮提示词体积的实测结论：技能目录占 17,948 字符、工具 schema 固定 6,236 且不受 tools.profile 影响；skills.limits.maxSkillsInPrompt=0 使 promptTokens 降 32%；agents.defaults.tools 为非法键。含备份、验证与回滚。",
+      "status": "active",
+      "filename": "openclaw-token-b90e1e5f.md",
+      "relativePath": "documents/active/openclaw-token-b90e1e5f.md",
+      "sourcePaths": [
+        "openclaw.json",
+        "openclaw.json.bak-skills-091848",
+        "openclaw.json.bak-toolsfix-091720"
+      ],
+      "sessionIds": [
+        "b2b7acaa-81f0-4411-a0da-8c52c0afe486"
+      ],
+      "createdAt": "2026-10-31T01:20:52.527Z",
+      "updatedAt": "2026-10-31T01:20:52.527Z",
+      "lastAccessedAt": "2026-10-31T13:50:16.054Z",
+      "revision": 1,
+      "contentHash": "dff55021bff49cf055dd31533fcd1f552dc61e814a9d73bf03266edfe198b429",
+      "sizeBytes": 3454,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "414a45c1-0caa-4ef0-b0eb-09ef98dc319b",
+      "title": "OpenClaw 主动问候静默失败根因：tools.allow 白名单漏 message",
+      "description": "12:30 定时问候静默失败的排查结论：并发会话写入 tools.allow 15 项白名单却漏掉 message 工具，导致 tool_call 报 Unknown tool id。含回退与验证、故障指纹，以及 message 工具需 action:\"send\" 的参数要点。",
+      "status": "active",
+      "filename": "openclaw-tools-allow-message-414a45c1.md",
+      "relativePath": "documents/active/openclaw-tools-allow-message-414a45c1.md",
+      "sourcePaths": [
+        "openclaw.json",
+        "openclaw.json.bak-prompt-20261031014812"
+      ],
+      "sessionIds": [
+        "1c1d04d5-4706-4df7-9e48-8ea2657523bc"
+      ],
+      "createdAt": "2026-10-31T10:26:45.361Z",
+      "updatedAt": "2026-10-31T10:26:45.361Z",
+      "lastAccessedAt": "2026-10-31T12:27:28.334Z",
+      "revision": 1,
+      "contentHash": "2f8efefc2f09b324def26a87e519f5e014d492476c8c8c2813085bd738d97ed5",
+      "sizeBytes": 3040,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "ed29682d-08e9-426c-8aff-5a7ee76ade2d",
+      "title": "开心问候守卫闸门：按发货实时钟点硬判静默窗口（含 Mac 睡眠迟到问题）",
+      "description": "checkin-roll 挂 command 守卫而非 announce 作业的原因与设计：cron.skipMissedJobs 保留 at 作业补跑 + Mac DarkWake 迟到会撞进双倍计费窗口，故由 tools/checkin-fire.py 按发货实时钟点判定（静默窗口、迟到>60 分钟、早于 2 分钟均不发），放行才现挂 announce 并写入真实钟点；规则唯一处 tools/kaixin_time.py，test_guard.py 16 场景 + 1440 次抽样验证。",
+      "status": "active",
+      "filename": "mac-ed29682d.md",
+      "relativePath": "documents/active/mac-ed29682d.md",
+      "sourcePaths": [
+        "workspace/tools/checkin-fire.py",
+        "workspace/tools/kaixin_time.py",
+        "workspace/tools/checkin-roll.py",
+        "workspace/tools/test_guard.py",
+        "workspace/AGENTS.md",
+        "workspace/USER.md",
+        "workspace/MEMORY.md"
+      ],
+      "sessionIds": [
+        "008fa278-0430-4140-9b28-adbf89445dd1"
+      ],
+      "createdAt": "2026-10-31T12:27:36.956Z",
+      "updatedAt": "2026-10-31T12:27:36.956Z",
+      "lastAccessedAt": "2026-11-06T03:35:06.181Z",
+      "revision": 1,
+      "contentHash": "01bf446b3d1442aa26e21e801e61d903bdde5183a55be656be2bbf3449afc201",
+      "sizeBytes": 4525,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "56f3c59f-9f9f-4562-97e7-d1513ed9dc5f",
+      "title": "夜间维护流水线：daily-digest / growth-review / dreaming（2026-10-31 时间前移）",
+      "description": "OpenClaw 每晚记忆闭环的当前排程（22:20 摘录 / 22:30 复盘 / 07:00 dreaming）、前移原因（娘子 Mac 凌晨睡眠）、三作业 id 与提示词要点、用户作业与插件托管作业两种改法、核查与回滚路径及 sqlite/写竞态坑。",
+      "status": "active",
+      "filename": "daily-digest-growth-review-dreaming-2026-10-31-56f3c59f.md",
+      "relativePath": "documents/active/daily-digest-growth-review-dreaming-2026-10-31-56f3c59f.md",
+      "sourcePaths": [
+        "workspace/AGENTS.md",
+        "workspace/OPS.md",
+        "workspace/tools/daily-digest.py",
+        "workspace/DREAMS.md",
+        "openclaw.json"
+      ],
+      "sessionIds": [
+        "3461c0dd-6fba-4cf9-885f-a4af402a802e"
+      ],
+      "createdAt": "2026-10-31T13:50:40.743Z",
+      "updatedAt": "2026-10-31T13:50:40.743Z",
+      "lastAccessedAt": "2026-11-14T04:47:23.816Z",
+      "revision": 1,
+      "contentHash": "6c6ea801180b88966ef560fdf6bfbce69135c549566bfb1efea96a1c1dea3d25",
+      "sizeBytes": 6651,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "4efc83e6-eaf3-4f4c-a7c5-1bd438f02a0e",
+      "title": "开心角色正典与「娘子的话能改世界」规则（2026-10-31 重建）",
+      "description": "docx +《真命小和尚》两部为准的角色正典（一德方丈、乌龙寺圆慧/紫微/百搭/铁空、十二铜人阵、恢复的法术能力），已撤回的自创背景清单（了尘/慧明/石头/胖师父），最高世界规则「娘子的话能改世界」，以及冲突裁决口径、预算/清扫/实机验证与 commit c5f613f。",
+      "status": "active",
+      "filename": "2026-10-31-4efc83e6.md",
+      "relativePath": "documents/active/2026-10-31-4efc83e6.md",
+      "sourcePaths": [
+        "workspace/WORLD.md",
+        "workspace/SOUL.md",
+        "workspace/IDENTITY.md",
+        "workspace/GROWTH.md",
+        "workspace/MEMORY.md",
+        "workspace/USER.md",
+        "workspace/AGENTS.md"
+      ],
+      "sessionIds": [
+        "175c1771-ef4d-4511-b8a7-6f69bc4bc964"
+      ],
+      "createdAt": "2026-10-31T14:10:42.128Z",
+      "updatedAt": "2026-10-31T14:10:42.128Z",
+      "lastAccessedAt": "2026-10-31T14:10:42.128Z",
+      "revision": 1,
+      "contentHash": "40ee8dad33c99d9161a501ef18f572ca19e32850fbd8c54422cfc4c7d2e671e1",
+      "sizeBytes": 5331,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "4b159362-5618-4c0a-a521-e157ffab0689",
+      "title": "dsh-superagent 本地试用环境搭建与 agent 小号必要性依据",
+      "description": "dsh-superagent 在 macOS 本地跑通的环境修补记录：tmux/dsh 工具链修复、独立 profile 托管启动、GitHub Source 未配置的中间态，以及为什么必须用独立 agent 小号（含源码判定依据）。",
+      "status": "active",
+      "filename": "dsh-superagent-agent-4b159362.md",
+      "relativePath": "documents/active/dsh-superagent-agent-4b159362.md",
+      "sourcePaths": [
+        "opensource/dsh-superagent-prototype",
+        "anaconda3/envs/tmux/bin/tmux",
+        "opensource/dsh-superagent-prototype/.artifacts"
+      ],
+      "sessionIds": [
+        "0959a715-67e7-402c-8142-4c2604faa753"
+      ],
+      "createdAt": "2026-11-01T06:05:59.627Z",
+      "updatedAt": "2026-11-01T06:05:59.627Z",
+      "lastAccessedAt": "2026-11-12T14:44:48.944Z",
+      "revision": 1,
+      "contentHash": "2363b05a08b14e642481b91cbb48493341d35135e231f9c11a100ae8dcd63c6e",
+      "sizeBytes": 6014,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "6a771e59-e1f5-4911-8d5b-87f7b50583f9",
+      "title": "正太音（未变声少年男声）生成指南：TTS 提示词与 RVC/GPT-SoVITS 流程",
+      "description": "把“正太音”翻译成声学参数的可复制 TTS 提示词模板、ElevenLabs 结构、B 站同款 RVC/GPT-SoVITS 训练与后期链、常见坑，以及 2026-11 核查的变声器与模型获取渠道。",
+      "status": "active",
+      "filename": "tts-rvc-gpt-sovits-6a771e59.md",
+      "relativePath": "documents/active/tts-rvc-gpt-sovits-6a771e59.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "b38cfeba-0524-4cdf-9ab8-b5cc119ae6fe"
+      ],
+      "createdAt": "2026-11-01T15:04:35.180Z",
+      "updatedAt": "2026-11-01T15:04:35.180Z",
+      "lastAccessedAt": "2026-11-04T10:37:07.044Z",
+      "revision": 1,
+      "contentHash": "9ff63ac726395b78745046ad3ec58bc0df0b656341c13aa143a62fb23c203b2d",
+      "sizeBytes": 9815,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "0836109c-fd49-460d-a2d1-91559498d5c5",
+      "title": "正太音本地流水线实测：TTS+Applio/RVC 架构、F0 标定表与 mozi/conan 模型对比",
+      "description": "本机实测跑通的正太音生成流水线：edge-tts 成年男声底音 + RVC 音色转换 + -16 LUFS 后期，含 F0 标定表、谱质心选型依据、Applio CLI 与 NO_PROXY 踩坑，及 mozi-v2 与 conan 模型结论。",
+      "status": "active",
+      "filename": "tts-applio-rvc-f0-mozi-conan-0836109c.md",
+      "relativePath": "documents/active/tts-applio-rvc-f0-mozi-conan-0836109c.md",
+      "sourcePaths": [
+        "Documents/python/voice/zhengtai_rvc.py",
+        "Documents/python/voice/README.md",
+        "Documents/python/voice/samples"
+      ],
+      "sessionIds": [
+        "c8f74745-c031-4dc5-bf22-f4f9744cb11f"
+      ],
+      "createdAt": "2026-11-02T06:12:34.431Z",
+      "updatedAt": "2026-11-02T06:12:34.431Z",
+      "lastAccessedAt": "2026-11-02T16:08:14.315Z",
+      "revision": 1,
+      "contentHash": "5356e2ec4ba0c2a4310037095de5ff590384791cd7c93d032ea0dc8e7c743dc2",
+      "sizeBytes": 4830,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "62e203ff-43cf-45d5-ac8e-23c09189a833",
+      "title": "正太音选型：谱质心优先于音调（goku/boruto/conan 模型对比与踩坑）",
+      "description": "在 0836109c 流水线基础上的第二轮实测：幼态感由谱质心决定而非 pitch，五模型 F0/谱质心标定表、共振峰调整反效果、当前默认 goku p0、并行推理 SIGSEGV 等操作坑。",
+      "status": "active",
+      "filename": "goku-boruto-conan-62e203ff.md",
+      "relativePath": "documents/active/goku-boruto-conan-62e203ff.md",
+      "sourcePaths": [
+        "Documents/python/voice/zhengtai_rvc.py",
+        "Documents/python/voice/README.md",
+        "Documents/python/voice/samples"
+      ],
+      "sessionIds": [
+        "4508ee6b-c8cc-4b87-9820-6b4338d416b0"
+      ],
+      "createdAt": "2026-11-02T06:29:07.872Z",
+      "updatedAt": "2026-11-02T06:29:07.872Z",
+      "lastAccessedAt": "2026-11-02T16:08:14.315Z",
+      "revision": 1,
+      "contentHash": "bc8d333065d968875aafc8c95181fe87a58f833d37083f70d304acc9645e4dcc",
+      "sizeBytes": 4862,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "3c9f3e7a-dee8-4138-988c-f4c1406249c1",
+      "title": "从 DSH desktop profile 彻底卸载 bundle 插件（dsh-opendesign-go 实录）",
+      "description": "dsh-opendesign-go 左上角 amr-link 横幅来源，及五层卸载流程：cordis.patch.yml 条目、package.json 依赖、pnpm-lock 三处、.credentials.yaml refs、node_modules 与运行态目录；含备份/幂等脚本路径、验证证据、重启生效与运行时回写风险。",
+      "status": "active",
+      "filename": "dsh-desktop-profile-bundle-dsh-opendesign-go-3c9f3e7a.md",
+      "relativePath": "documents/active/dsh-desktop-profile-bundle-dsh-opendesign-go-3c9f3e7a.md",
+      "sourcePaths": [
+        ".dsh/profiles/desktop/cordis.patch.yml",
+        ".dsh/profiles/desktop/package.json",
+        ".dsh/profiles/desktop/pnpm-lock.yaml",
+        ".dsh/.credentials.yaml",
+        ".dsh/backups/dsh-opendesign-go-20261102-234816/RESTORE.md",
+        ".dsh/backups/dsh-opendesign-go-20261102-234816/remove-opendesign-go.py"
+      ],
+      "sessionIds": [
+        "36ee31e1-2dcb-4945-a873-c22874eaeafd"
+      ],
+      "createdAt": "2026-11-02T15:55:14.252Z",
+      "updatedAt": "2026-11-02T15:55:14.252Z",
+      "lastAccessedAt": "2026-11-13T03:48:03.882Z",
+      "revision": 1,
+      "contentHash": "f5774bcfab8e94ba71ecb41411937115ca6fec4b34aff59ef61a2ceb11435762",
+      "sizeBytes": 6654,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "e19c02d2-2a56-4f20-9ce8-b38172ef8952",
+      "title": "dsh-superagent-lite：DSH 插件「事件驱动 super-agent 切片」实现与验证",
+      "description": "本地 DSH 插件 dsh-superagent-lite 的实现结构、关键设计取舍（HTTP 数据通道、单一闭包复用、逻辑 Worker）、安装方式、验证结果与已知边界，供后续扩展 Watchdog / 真实 Worker Session 时参考。",
+      "status": "active",
+      "filename": "dsh-superagent-lite-dsh-super-agent-e19c02d2.md",
+      "relativePath": "documents/active/dsh-superagent-lite-dsh-super-agent-e19c02d2.md",
+      "sourcePaths": [
+        "plugins/dsh-superagent-lite/index.js",
+        "plugins/dsh-superagent-lite/client.js",
+        "plugins/dsh-superagent-lite/cordis.patch.yml",
+        "plugins/dsh-superagent-lite/test/smoke.mjs",
+        "plugins/dsh-superagent-lite/README.md",
+        ".dsh/profiles/desktop/package.json"
+      ],
+      "sessionIds": [
+        "88dc87df-fd96-4051-9362-d5fc472d5dec"
+      ],
+      "createdAt": "2026-11-02T16:01:54.845Z",
+      "updatedAt": "2026-11-02T16:01:54.845Z",
+      "lastAccessedAt": "2026-11-05T14:26:23.663Z",
+      "revision": 1,
+      "contentHash": "3a85bb4d077128e0fefe7c47651add72026a01a626760114accff24bb0fc3d3e",
+      "sizeBytes": 4679,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "9e973980-e800-4287-a74a-a9cd8d5112d3",
+      "title": "dsh-superagent-lite 二期：接真实 DSH 事件（live 总线）与热重载接入流程",
+      "description": "dsh-superagent-lite 第二阶段：从 seed 模拟器改为订阅真实宿主事件（inbox/subagent/error/tools/result）的映射规则、live 计数器语义、触发器 id 约定、插件 enable 的正确 entryId 与客户端刷新验证流程，以及仍未实现的部分。",
+      "status": "active",
+      "filename": "dsh-superagent-lite-dsh-live-9e973980.md",
+      "relativePath": "documents/active/dsh-superagent-lite-dsh-live-9e973980.md",
+      "sourcePaths": [
+        "plugins/dsh-superagent-lite/index.js",
+        "plugins/dsh-superagent-lite/client.js",
+        "plugins/dsh-superagent-lite/test/smoke.mjs",
+        "plugins/dsh-superagent-lite/cordis.patch.yml",
+        "plugins/dsh-superagent-lite/README.md",
+        ".dsh/profiles/desktop/package.json",
+        ".dsh/profiles/desktop/cordis.patch.yml"
+      ],
+      "sessionIds": [
+        "9847b022-e6fd-4197-8dae-50b47bcab65b"
+      ],
+      "createdAt": "2026-11-02T17:04:58.220Z",
+      "updatedAt": "2026-11-02T17:04:58.220Z",
+      "lastAccessedAt": "2026-11-06T05:14:23.575Z",
+      "revision": 1,
+      "contentHash": "e9802e7322a96377fa3c020f36efc61db99e8ea3a9bd3fa845dac7a0f33b7924",
+      "sizeBytes": 5483,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "f68e6cea-71a8-4231-a63b-dba6577e70dd",
+      "title": "dsh-superagent-lite 三期：Router 派真子会话（startActivation 契约）与 Watchdog 落地",
+      "description": "三期改造记录：本机 DSH 的 ctx.subagents 只暴露 startActivation(spec)（无 start），据此让 Router 用 spawn provider 真开子会话并按 delivery:'parent' 回灌；同时落地定时 Watchdog，以及护栏参数、验证证据与仍缺的自动决策循环。",
+      "status": "active",
+      "filename": "dsh-superagent-lite-router-startactivation-watch-f68e6cea.md",
+      "relativePath": "documents/active/dsh-superagent-lite-router-startactivation-watch-f68e6cea.md",
+      "sourcePaths": [
+        "plugins/dsh-superagent-lite/index.js",
+        "plugins/dsh-superagent-lite/client.js",
+        "plugins/dsh-superagent-lite/test/smoke.mjs",
+        "plugins/dsh-superagent-lite/README.md"
+      ],
+      "sessionIds": [
+        "cff96e3b-aa3b-46da-8ae6-de988592b055"
+      ],
+      "createdAt": "2026-11-02T23:56:46.982Z",
+      "updatedAt": "2026-11-02T23:56:46.982Z",
+      "lastAccessedAt": "2026-11-05T11:25:35.083Z",
+      "revision": 1,
+      "contentHash": "cb4848c837d43ccc87c039f29b24eaa32f5811253e2503c532328d7b40d5814d",
+      "sizeBytes": 4485,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "c2665f41-c969-4053-bb1a-974d89149a67",
+      "title": "bili 上游熔断横幅（左上角提示条）判读与 DNS 取证流程",
+      "description": "bili/billion-context 「N 个上游不可用」横幅的端点、日志指纹、只读取证顺序、处置原则（刷新而非重启），以及 DNS 抖动连带打断 dsh-superagent 自检的教训。",
+      "status": "active",
+      "filename": "bili-dns-c2665f41.md",
+      "relativePath": "documents/active/bili-dns-c2665f41.md",
+      "sourcePaths": [
+        ".local/state/billion-context/bili.log",
+        ".config/billion-context/billion-context.json",
+        ".dsh/profiles/desktop/node_modules/billion-context/dist/index.js"
+      ],
+      "sessionIds": [
+        "8d0ee3a5-a166-4c1b-a923-34db50818ef2"
+      ],
+      "createdAt": "2026-11-03T10:58:03.058Z",
+      "updatedAt": "2026-11-03T10:58:03.058Z",
+      "lastAccessedAt": "2026-11-04T08:39:48.998Z",
+      "revision": 1,
+      "contentHash": "e341b5b44a552f64493840f5e7137cc455d65f14a037cdb46237d21589d3c166",
+      "sizeBytes": 6750,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "71d81705-24fc-44ab-bb18-47670a0d2a0a",
+      "title": "开心小镇：近景镜头 2.4、第六处「茶亭」与到访判定浮点修复",
+      "description": "kaixin-world 一次实施记录：默认镜头 2.08→2.4 与反向缩放名牌、新增茶亭地点 (46,16) 及喝盏茶动作、树下休息挪到 (40,17) 避开风车贴图、地标与角色同容器按 y 排序、stroll.ts 到访半径 1e-9 容差，含验证结果与待定项。",
+      "status": "active",
+      "filename": "2-4-71d81705.md",
+      "relativePath": "documents/active/2-4-71d81705.md",
+      "sourcePaths": [
+        "src/gameplay/stroll.ts",
+        "src/components/PixiGame.tsx",
+        "src/components/SceneLandmarks.tsx",
+        "src/gameplay/viewportScale.ts",
+        "data/worldLocations.ts",
+        "convex/agent/activityPlan.ts"
+      ],
+      "sessionIds": [
+        "e6dd5350-caaf-4757-8090-c04f7545cfcd"
+      ],
+      "createdAt": "2026-11-04T08:15:08.410Z",
+      "updatedAt": "2026-11-04T08:15:08.410Z",
+      "lastAccessedAt": "2026-11-06T05:14:23.575Z",
+      "revision": 1,
+      "contentHash": "fdfc5aadb0cd1af851983921c1e282daa848138b533fdf1aee3298284ab199c9",
+      "sizeBytes": 5157,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "d723d537-13d1-494b-a535-4c42bf64da7a",
+      "title": "dsh-computer-use：macOS 电脑操作插件实现与验证（2026-11-04）",
+      "description": "dsh-computer-use 插件的架构（Swift 原生助手 + AX 树 + Vision OCR）、7 个工具语义、实测验证结果与踩坑修复，供后续扩展或排障参考。",
+      "status": "active",
+      "filename": "dsh-computer-use-macos-2026-11-04-d723d537.md",
+      "relativePath": "documents/active/dsh-computer-use-macos-2026-11-04-d723d537.md",
+      "sourcePaths": [
+        "plugins/dsh-computer-use/README.md",
+        "plugins/dsh-computer-use/native/ComputerUse.swift",
+        "plugins/dsh-computer-use/lib/tools.js",
+        "plugins/dsh-computer-use/lib/screen.js",
+        "plugins/dsh-computer-use/lib/helper.js"
+      ],
+      "sessionIds": [
+        "f4e41702-10df-4fd8-9063-d382e467aca4"
+      ],
+      "createdAt": "2026-11-04T09:20:54.359Z",
+      "updatedAt": "2026-11-04T09:20:54.359Z",
+      "lastAccessedAt": "2026-11-06T10:39:41.057Z",
+      "revision": 1,
+      "contentHash": "e9c878b50a2c96928e718719c4db999c1077b724c73d8e50dc80f01b8ec8dde0",
+      "sizeBytes": 4439,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "32c13a81-47d3-48ca-bc7a-1427243cff68",
+      "title": "awesome-dsh-plugin 收录提交流程与门禁规则（dsh-computer-use → PR #11963）",
+      "description": "把一个本地 DSH 插件提交进 awesome-dsh-plugin 的完整流程、条目格式、CI 检查项与「仓库年龄 1 天」门禁的自愈行为，含本次 dsh-computer-use 的实例证据。",
+      "status": "active",
+      "filename": "awesome-dsh-plugin-dsh-computer-use-pr-11963-32c13a81.md",
+      "relativePath": "documents/active/awesome-dsh-plugin-dsh-computer-use-pr-11963-32c13a81.md",
+      "sourcePaths": [
+        "plugins/dsh-computer-use/README.md",
+        "plugins/dsh-computer-use/package.json"
+      ],
+      "sessionIds": [
+        "1b83a669-0b1f-4439-82b2-e250a00c75a6"
+      ],
+      "createdAt": "2026-11-04T10:30:36.292Z",
+      "updatedAt": "2026-11-04T10:30:36.292Z",
+      "lastAccessedAt": "2026-11-08T06:56:14.694Z",
+      "revision": 1,
+      "contentHash": "c3b4bdc376aad1c750a6d339224c71b5bef8b0e012fb08e88aa4f0eee29393d2",
+      "sizeBytes": 3836,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "0487f82c-11ca-4e43-8892-b8514a9fb7bf",
+      "title": "灰誓：旅者立绘白底根因与透明底接入流程（commit 43f235f）",
+      "description": "灰誓项目立绘管线：role_art.gd 图集回退导致白底卡片的根因、新增透明立绘的接入方式与 50 项 alpha 验证流程，含敌人立绘查找顺序与并行改动干扰提示。",
+      "status": "active",
+      "filename": "commit-43f235f-0487f82c.md",
+      "relativePath": "documents/active/commit-43f235f-0487f82c.md",
+      "sourcePaths": [
+        "ui/role_art.gd",
+        "tests/test_character_art_insertion.gd",
+        "docs/evidence/portrait-alpha-20261104/README.md"
+      ],
+      "sessionIds": [
+        "04affdb5-e125-493b-a1e2-ef6344f57a62"
+      ],
+      "createdAt": "2026-11-04T14:28:11.684Z",
+      "updatedAt": "2026-11-04T14:28:11.684Z",
+      "lastAccessedAt": "2026-11-14T04:47:23.816Z",
+      "revision": 1,
+      "contentHash": "029d804536cc11d549729f138c0164bceb1c808e55b043c0178623c6c605d2f9",
+      "sizeBytes": 3204,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "625560c3-a139-4011-bb1e-eb874fb9be6e",
+      "title": "zebao-splash：私有开屏插件 fork 与 dsh-boot-suite 移除记录",
+      "description": "本机开屏动画改为私有 fork zebao-splash 后的差别清单：逐幕配音回到自带真声素材、终幕不叠 TTS、上游更新与模板商店入口置空、dsh-boot-suite 目录与锁文件条目全部清除，附可复用的预览验证方法。",
+      "status": "active",
+      "filename": "zebao-splash-fork-dsh-boot-suite-625560c3.md",
+      "relativePath": "documents/active/zebao-splash-fork-dsh-boot-suite-625560c3.md",
+      "sourcePaths": [
+        "plugins/zebao-splash/README.md",
+        "plugins/zebao-splash/lib/host-startup.js",
+        "plugins/zebao-splash/lib/client.js",
+        "plugins/zebao-splash/lib/splash.js",
+        "plugins/zebao-splash/templates/archive-warm/template.json"
+      ],
+      "sessionIds": [
+        "21e08c28-2394-4cd1-9d93-c14fd1968a57"
+      ],
+      "createdAt": "2026-11-05T07:09:45.488Z",
+      "updatedAt": "2026-11-05T07:09:45.488Z",
+      "lastAccessedAt": "2026-11-13T03:48:03.882Z",
+      "revision": 1,
+      "contentHash": "9c625e0fbd722219fe921201df23fe58b4255a0f76eb64b2987986f0987a254d",
+      "sizeBytes": 4985,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "b9bbd9c4-2b5f-4136-be3f-e8e68dbcacce",
+      "title": "dsh-computer-use 游戏级响应优化：低延迟输入 daemon 与 computer_sequence（2026-11-05）",
+      "description": "dsh-computer-use 游戏模式增量：CUInput 常驻 daemon 架构、实测延迟数据、computer_sequence 工具、TextEdit AXDialog unicode 排障结论与交付状态。",
+      "status": "active",
+      "filename": "dsh-computer-use-daemon-computer-sequence-2026-1-b9bbd9c4.md",
+      "relativePath": "documents/active/dsh-computer-use-daemon-computer-sequence-2026-1-b9bbd9c4.md",
+      "sourcePaths": [
+        "plugins/dsh-computer-use/native/CUInput.swift",
+        "plugins/dsh-computer-use/lib/helper.js",
+        "plugins/dsh-computer-use/lib/tools.js",
+        "plugins/dsh-computer-use/README.md"
+      ],
+      "sessionIds": [
+        "55e23f3b-be52-4ba6-9449-677669b7940d"
+      ],
+      "createdAt": "2026-11-05T08:37:47.111Z",
+      "updatedAt": "2026-11-05T08:37:47.111Z",
+      "lastAccessedAt": "2026-11-06T10:39:41.057Z",
+      "revision": 1,
+      "contentHash": "ccc8055a4cc9a48ef4a1ef255b37ba309b812fe40c99b323cf8db88f995984e2",
+      "sizeBytes": 4159,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "53636080-86e7-4b3b-9c57-5aa2af2c5a42",
+      "title": "zebao-skin：DSH 浅色太空背景皮肤插件（结构、安装、验证）",
+      "description": "纯背景皮肤插件的目录结构、desktop profile 三处安装改动、动态星空与玻璃参数设计、客户端 bundle 需 ⌘Q 重启才生效的环境特性，以及验证与回滚步骤。",
+      "status": "active",
+      "filename": "zebao-skin-dsh-53636080.md",
+      "relativePath": "documents/active/zebao-skin-dsh-53636080.md",
+      "sourcePaths": [
+        "plugins/zebao-skin/lib/client.src.js",
+        "plugins/zebao-skin/lib/skin.css",
+        "plugins/zebao-skin/README.md",
+        ".dsh/profiles/desktop/package.json"
+      ],
+      "sessionIds": [
+        "289bde2e-507f-42cf-ab64-7a88dc15531a"
+      ],
+      "createdAt": "2026-11-05T11:36:56.370Z",
+      "updatedAt": "2026-11-05T11:36:56.370Z",
+      "lastAccessedAt": "2026-11-12T15:15:58.771Z",
+      "revision": 1,
+      "contentHash": "07302491da4711519eab1b9f9917319ad3aadf99b3ff49b172e59d7e6f1a1356",
+      "sizeBytes": 4340,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "fe789e34-e33f-46dd-9be9-ed96241bace4",
+      "title": "灰誓：战斗特效与手牌呈现美术打磨（2026-11-05）",
+      "description": "手牌画窗按文字高度反推、角色格舞台底光、意图条矢量图标、命中特效与受击闪白调参；含 234/174/58 checks 验收数据、证据路径与长文案卡未解取舍。",
+      "status": "active",
+      "filename": "2026-11-05-fe789e34.md",
+      "relativePath": "documents/active/2026-11-05-fe789e34.md",
+      "sourcePaths": [
+        "docs/ART_PASS_20261105.md",
+        "ui/battle_flair.gd",
+        "tests/test_combat_presentation.gd",
+        "tests/test_card_presentation.gd"
+      ],
+      "sessionIds": [
+        "e1c3236f-5249-411d-9a34-bf5b1e5b240f"
+      ],
+      "createdAt": "2026-11-05T13:17:05.963Z",
+      "updatedAt": "2026-11-05T13:17:05.963Z",
+      "lastAccessedAt": "2026-11-05T13:17:05.963Z",
+      "revision": 1,
+      "contentHash": "59cf0c102c606061830de563283cbbd11511f24227f5a5490c84631e454e3d5d",
+      "sizeBytes": 4998,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "c2f82216-8f76-47f0-b356-abb2a112e108",
+      "title": "《灰誓》长夜誓约（Oaths）机制实现与验收记录（补丁 7）",
+      "description": "灰誓 0.2.3 长夜誓约四层机制（开局誓约/每日誓约/精英词缀/评分）的设计理由、核心代码挂点、存档兼容、验收数字、截图证据与本地补丁 7 打包流程。",
+      "status": "active",
+      "filename": "oaths-7-c2f82216.md",
+      "relativePath": "documents/active/oaths-7-c2f82216.md",
+      "sourcePaths": [
+        "core/oath_mechanics.gd",
+        "core/combat_flow.gd",
+        "core/meta_progress.gd",
+        "core/game_engine.gd",
+        "ui/main.gd",
+        "docs/OATHS.md",
+        "docs/ARCHITECTURE.md",
+        "tests/test_oaths.gd",
+        "tests/test_oaths_ui.gd",
+        "tests/capture_oaths.gd",
+        "docs/evidence/oaths-20261105",
+        "scripts/package_local_update.py"
+      ],
+      "sessionIds": [
+        "c538f370-751e-40f7-b53f-227cb9add2d0"
+      ],
+      "createdAt": "2026-11-05T13:18:15.584Z",
+      "updatedAt": "2026-11-05T13:18:15.584Z",
+      "lastAccessedAt": "2026-11-12T14:44:48.944Z",
+      "revision": 1,
+      "contentHash": "cc87bd7ad2f3d31f07da0df19226453e89f5974848439dc810343bf5714dac29",
+      "sizeBytes": 6033,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "229c2a1d-6cf2-498e-829f-c94d31f2c60f",
+      "title": "vivo（Android 17）免 root 优化实录：可用项、被拒项与回滚",
+      "description": "安卓 17 vivo 机上免 root 优化的实测记录：disable-user 生效的 6 个包、uninstall --user 0 / suspend 的报错原文、动画 0.5x、现场内存电量存储数据、回滚命令，以及「免 root 天花板在动画+边缘包」的结论。",
+      "status": "active",
+      "filename": "vivo-android-17-root-229c2a1d.md",
+      "relativePath": "documents/active/vivo-android-17-root-229c2a1d.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "48daee23-719e-42ec-8eed-4922228ad8ed"
+      ],
+      "createdAt": "2026-11-05T14:45:46.514Z",
+      "updatedAt": "2026-11-05T14:45:46.514Z",
+      "lastAccessedAt": "2026-11-06T03:35:06.181Z",
+      "revision": 1,
+      "contentHash": "b4e85920897cfcab1c978eef463e8235234a529fe621e61805042a1de2b0e237",
+      "sizeBytes": 4863,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "07073dac-4a50-49fa-8342-afed2c0dd1a4",
+      "title": "开心小镇：Game.tsx 搭建子系统抽取（resolveBuildTap / usePixelBuild）",
+      "description": "kaixin-world 2026-11-06 重构交接：把自由搭建的点击守卫抽成纯函数 resolveBuildTap，再把整个搭建状态机搬进 usePixelBuild，Game.tsx 679→478 行；含 hook 接口形状、git apply --cached 单侧提交做法、buildTileArt.ts 死代码与并行线 play/store.test.ts 失败两个待定项。",
+      "status": "active",
+      "filename": "game-tsx-resolvebuildtap-usepixelbuild-07073dac.md",
+      "relativePath": "documents/active/game-tsx-resolvebuildtap-usepixelbuild-07073dac.md",
+      "sourcePaths": [
+        "src/components/Game.tsx",
+        "src/hooks/usePixelBuild.ts",
+        "src/gameplay/pixelBuildTap.ts",
+        "src/gameplay/pixelBuildTap.test.ts",
+        "data/pixelBuilding.ts",
+        "src/gameplay/buildTileArt.ts",
+        "src/gameplay/play/store.test.ts"
+      ],
+      "sessionIds": [
+        "bdaa9bae-d6a8-486e-abc8-3ac0693460d9"
+      ],
+      "createdAt": "2026-11-06T04:04:02.644Z",
+      "updatedAt": "2026-11-06T04:04:02.644Z",
+      "lastAccessedAt": "2026-11-14T04:47:23.816Z",
+      "revision": 1,
+      "contentHash": "66397d7fd6d5eacb8f6769cd9d66b89d6fddb51adfa653899f1ef9ad20295047",
+      "sizeBytes": 5785,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "769c3a61-4d2e-4ac9-bd39-d46c28c186be",
+      "title": "awesome-dsh-plugin gate 触发机制修正：空闲 PR 不会自动转绿（2026-11-06）",
+      "description": "修正《awesome-dsh-plugin 收录提交流程与门禁规则》中「年龄闸约 2 小时自愈」的说法：gate 由 workflow_run 触发、只评估刚跑完检查的批次，空闲 PR 需推空提交刷新；含 PR #11963 的实证与刷新步骤。",
+      "status": "active",
+      "filename": "awesome-dsh-plugin-gate-pr-2026-11-06-769c3a61.md",
+      "relativePath": "documents/active/awesome-dsh-plugin-gate-pr-2026-11-06-769c3a61.md",
+      "sourcePaths": [],
+      "sessionIds": [
+        "2d86d995-daa9-4018-9a57-b171e45f92bc"
+      ],
+      "createdAt": "2026-11-06T10:40:01.371Z",
+      "updatedAt": "2026-11-06T10:40:01.371Z",
+      "lastAccessedAt": "2026-11-09T15:48:09.657Z",
+      "revision": 1,
+      "contentHash": "9da366e312ee206afaf569386cb8ffdd4d7dd31dcfe0fb5c42bf30f3a5962a79",
+      "sizeBytes": 3190,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "2ce88060-59b2-4719-ad02-4816b0ce4033",
+      "title": "sherlock 用户名枚举：对照组核验方法与站点可靠性实测（2026-11-07）",
+      "description": "sherlock v0.16.2 的「找到」多为假阳性：记录对照组哨兵用户名核验流程、13 个回声站、能正确 404 的站点、反爬拦截与 SSL 失败分类，以及 403 仍标 Claimed 的判据坑。",
+      "status": "active",
+      "filename": "sherlock-2026-11-07-2ce88060.md",
+      "relativePath": "documents/active/sherlock-2026-11-07-2ce88060.md",
+      "sourcePaths": [
+        "Documents/python/sherlock"
+      ],
+      "sessionIds": [
+        "92d50a74-91aa-43af-a7b5-5cdc98ad1f47"
+      ],
+      "createdAt": "2026-11-07T09:34:45.142Z",
+      "updatedAt": "2026-11-07T09:34:45.142Z",
+      "lastAccessedAt": "2026-11-07T09:34:45.142Z",
+      "revision": 1,
+      "contentHash": "22ad9d9ff60aed064a3b8b271b74e58779f18c508a5f6b61b7b0fc072bc56b7d",
+      "sizeBytes": 4587,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "795dc10f-579a-4525-b6ac-0e46176c190b",
+      "title": "zebao-skin v1.2：真实时间昼夜循环 + 海洋层（实现与验证）",
+      "description": "zebao-skin 的昼夜循环/海洋/天体层实现：真实日出日落与月相引擎（坐标已按用户所在地切到广州）、昼夜自适应配色、设置项与 data 属性、harness 预览参数、-rgb 变量教训与验证门禁。",
+      "status": "active",
+      "filename": "zebao-skin-v1-2-795dc10f.md",
+      "relativePath": "documents/active/zebao-skin-v1-2-795dc10f.md",
+      "sourcePaths": [
+        "plugins/zebao-skin/lib/client.src.js",
+        "plugins/zebao-skin/lib/skin.css",
+        "plugins/zebao-skin/tools/validate.mjs",
+        "plugins/zebao-skin/preview/harness.html",
+        "plugins/zebao-skin/README.md"
+      ],
+      "sessionIds": [
+        "9fe9acf3-2bd7-4bb8-8b68-25cee50608e6"
+      ],
+      "createdAt": "2026-11-07T09:48:57.229Z",
+      "updatedAt": "2026-11-07T09:48:57.229Z",
+      "lastAccessedAt": "2026-11-07T18:18:49.514Z",
+      "revision": 1,
+      "contentHash": "501a7823e23ebf97940c6a5b1c00ebec0a718ea9b01529bd1c3451bf8f0d3d98",
+      "sizeBytes": 3897,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "638514ae-9218-46f5-9601-e27d760c2647",
+      "title": "OpenBot（OpenMausBot 二开）重品牌与 macOS 打包交付",
+      "description": "OpenBot 项目：以 Apache-2.0 上游源码 fork 而非反编译 asar 的取舍、全仓重命名范围、electron-builder arm64 dmg 构建命令与产物、本机环境坑（ELECTRON_RUN_AS_NODE、pnpm 版本、Google 镜像）、已验证/未验证层级与待决事项。",
+      "status": "active",
+      "filename": "openbot-openmausbot-macos-638514ae.md",
+      "relativePath": "documents/active/openbot-openmausbot-macos-638514ae.md",
+      "sourcePaths": [
+        "Users/liuyongze/opensource/open-bot/release/OpenBot-0.1.0-arm64.dmg",
+        "Users/liuyongze/opensource/open-bot/release/OpenBot-installed-screenshot.png"
+      ],
+      "sessionIds": [
+        "10602087-e015-4b5d-a9b6-c0c3a0cff22a"
+      ],
+      "createdAt": "2026-11-08T08:04:05.610Z",
+      "updatedAt": "2026-11-08T08:04:05.610Z",
+      "lastAccessedAt": "2026-11-14T04:47:23.816Z",
+      "revision": 1,
+      "contentHash": "4a6b5d073a8ae9fa08321730ba33217d26d832243ff804f774d81b7379579207",
+      "sizeBytes": 4287,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "68aaf4f9-0350-46c6-a0e6-b11aacfd10ed",
+      "title": "OpenBot 本地虚拟机镜像（cua-driver 0.37.0 / layer 8）构建与验证",
+      "description": "在 macOS arm64 上手工构建 OpenBot「私有桌面」Docker 镜像：标签契约 com.openbot.cua-base/image-layer、两段式 wheel 安装、CJK 字体与 supervisor 启动链、验证结果、x11grab 与零字节 OpenSSL 等踩坑，以及必须由 GUI 点击的 loopbackMutationToken 权限边界。",
+      "status": "active",
+      "filename": "openbot-cua-driver-0-37-0-layer-8-68aaf4f9.md",
+      "relativePath": "documents/active/openbot-cua-driver-0-37-0-layer-8-68aaf4f9.md",
+      "sourcePaths": [
+        "Users/liuyongze/Desktop/openbot-vm-desktop.png",
+        "opensource/open-bot/server/request-auth.ts",
+        "opensource/open-bot/server/index.ts"
+      ],
+      "sessionIds": [
+        "2a644d34-f1b9-4764-b029-a743c6b85b92"
+      ],
+      "createdAt": "2026-11-08T10:18:50.933Z",
+      "updatedAt": "2026-11-08T10:18:50.933Z",
+      "lastAccessedAt": "2026-11-13T05:54:45.182Z",
+      "revision": 1,
+      "contentHash": "2a525b5c8734d668e5cc75e46b233c4d5722f697a5d88aa2381690116669cd10",
+      "sizeBytes": 10238,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "eb8b3865-f6c1-4dbe-ab67-f4bee4544db4",
+      "title": "DSH 归档会话管理插件：原生接口架构、永久删除边界与验收依据",
+      "description": "dsh-archive-manager 的设置节入口、原生归档快照与恢复契约、串行批量操作及无重启验收；明确 DSH 0.2.2-rc.2 下永久删除仍未实现，列出继续开发前的安全边界与未验证范围。",
+      "status": "active",
+      "filename": "dsh-eb8b3865.md",
+      "relativePath": "documents/active/dsh-eb8b3865.md",
+      "sourcePaths": [
+        "plugins/dsh-archive-manager/README.md",
+        "plugins/dsh-archive-manager/docs/superpowers/plans/2026-11-12-archive-manager.md"
+      ],
+      "sessionIds": [
+        "mnemon-run-v1-9461941c-7d23-4723-9d1a-c1299f29a57e"
+      ],
+      "createdAt": "2026-11-12T15:16:27.551Z",
+      "updatedAt": "2026-11-12T15:16:27.551Z",
+      "lastAccessedAt": "2026-11-13T03:48:03.882Z",
+      "revision": 1,
+      "contentHash": "73c82be8102c6b1eaac3b979ea1b66a8b67f5929c6cc7ee35237b2aa0bef3706",
+      "sizeBytes": 4986,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "1e154f5e-a66a-4ba4-bd14-e023d1dbefe4",
+      "title": "《崩坏：星穹铁道》4.7 货币战争模式规则查证（标准/超频）",
+      "description": "4.7 标准博弈与超频博弈的入口、通关给分、职级提升、初始资源、行动值、败局扣血与评级证据，含证据分级与待补证清单。",
+      "status": "active",
+      "filename": "4-7-1e154f5e.md",
+      "relativePath": "documents/active/4-7-1e154f5e.md",
+      "sourcePaths": [
+        "docs/research/currency-wars-4.7-modes.md",
+        "docs/research/currency-wars-4.7-bonds.md",
+        "docs/requirements.md",
+        "docs/game-design.md"
+      ],
+      "sessionIds": [
+        "mnemon-run-v1-fad21089-231d-45d7-8a9b-9c8044bc3af8"
+      ],
+      "createdAt": "2026-11-14T10:27:14.344Z",
+      "updatedAt": "2026-11-14T10:27:14.344Z",
+      "lastAccessedAt": "2026-11-14T10:27:14.344Z",
+      "revision": 1,
+      "contentHash": "a3f4c76e7a9bf59c1fd6fd5d74859fc91a2d1814f405f6b15854755a8032d99f",
+      "sizeBytes": 4644,
+      "memoryBodyIds": []
+    }
+  ]
 }
