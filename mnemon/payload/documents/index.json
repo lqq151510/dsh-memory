@@ -264,7 +264,7 @@
       ],
       "createdAt": "2026-11-01T15:04:35.180Z",
       "updatedAt": "2026-11-01T15:04:35.180Z",
-      "lastAccessedAt": "2026-11-04T10:37:07.044Z",
+      "lastAccessedAt": "2026-11-16T00:34:59.913Z",
       "revision": 1,
       "contentHash": "9ff63ac726395b78745046ad3ec58bc0df0b656341c13aa143a62fb23c203b2d",
       "sizeBytes": 9815,
@@ -287,7 +287,7 @@
       ],
       "createdAt": "2026-11-02T06:12:34.431Z",
       "updatedAt": "2026-11-02T06:12:34.431Z",
-      "lastAccessedAt": "2026-11-02T16:08:14.315Z",
+      "lastAccessedAt": "2026-11-16T00:34:59.913Z",
       "revision": 1,
       "contentHash": "5356e2ec4ba0c2a4310037095de5ff590384791cd7c93d032ea0dc8e7c743dc2",
       "sizeBytes": 4830,
@@ -310,7 +310,7 @@
       ],
       "createdAt": "2026-11-02T06:29:07.872Z",
       "updatedAt": "2026-11-02T06:29:07.872Z",
-      "lastAccessedAt": "2026-11-02T16:08:14.315Z",
+      "lastAccessedAt": "2026-11-15T21:47:27.035Z",
       "revision": 1,
       "contentHash": "bc8d333065d968875aafc8c95181fe87a58f833d37083f70d304acc9645e4dcc",
       "sizeBytes": 4862,
@@ -867,6 +867,110 @@
       "revision": 1,
       "contentHash": "a3f4c76e7a9bf59c1fd6fd5d74859fc91a2d1814f405f6b15854755a8032d99f",
       "sizeBytes": 4644,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "2c621ccf-ebba-47c4-9913-1c9f3f8b4e7c",
+      "title": "正太音模拟器（ShotaVoiceStudio）自训 RVC：RVCMAX 模型实测、打分口径与 ChildTalk 语料落地",
+      "description": "正太音桌面 App 的 MLX/RVC 工程文件、RVCMAX 六个模型的客观实测（全部 <85 分、谱质心 439–857Hz→必须自训）、measure_voice 验收口径、ChildTalk 语料选型与 21.8GB 下载/训练落地计划，含 HF SSRF 与代理下载踩坑。",
+      "status": "active",
+      "filename": "shotavoicestudio-rvc-rvcmax-childtalk-2c621ccf.md",
+      "relativePath": "documents/active/shotavoicestudio-rvc-rvcmax-childtalk-2c621ccf.md",
+      "sourcePaths": [
+        "script/rvc_engine.py",
+        "script/rvc_worker.py",
+        "script/train_rvc.py",
+        "script/measure_voice.py",
+        "script/import_rvcmax_model.py",
+        "script/prepare_elra_kids.py",
+        "script/build_and_run.sh",
+        "docs/男童声线语料参考.md"
+      ],
+      "sessionIds": [
+        "mnemon-run-v1-eb267ef4-f6e0-4623-bb00-edec4d963a70"
+      ],
+      "createdAt": "2026-11-15T09:41:47.810Z",
+      "updatedAt": "2026-11-15T09:41:47.810Z",
+      "lastAccessedAt": "2026-11-16T00:34:59.913Z",
+      "revision": 1,
+      "contentHash": "1ba37135cc909d62f7c58452acd2b7a97a50298dae6e37d81c896ac730275cbc",
+      "sizeBytes": 9072,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "7105e37d-b713-4447-8118-c8a460ce29bc",
+      "title": "RVC 变声提亮配方（共振峰 1.30 + 1.5kHz/+6dB）与 ChildTalk 22GB 下载实测",
+      "description": "kazuki 预置模型免重训过 85 分闸门的参数扫描（含 EQ 二维扫描表）、demo A/B 主观判据分叉、ChildTalk 22.02GB 的 aria2c 下载实测与「文件大小≠已下载字节」测量陷阱、以及下载后的训练流水线。承接 2c621ccf-ebba-47c4-9913-1c9f3f8b4e7c。",
+      "status": "active",
+      "filename": "rvc-1-30-1-5khz-6db-childtalk-22gb-7105e37d.md",
+      "relativePath": "documents/active/rvc-1-30-1-5khz-6db-childtalk-22gb-7105e37d.md",
+      "sourcePaths": [
+        "demo/A-现在这版.wav",
+        "demo/B-提亮版.wav",
+        "script/train_rvc.py",
+        "script/measure_voice.py"
+      ],
+      "sessionIds": [
+        "mnemon-run-v1-9a93fe8f-a603-42d9-bc78-924f47b007ee"
+      ],
+      "createdAt": "2026-11-15T12:18:12.058Z",
+      "updatedAt": "2026-11-15T12:18:12.058Z",
+      "lastAccessedAt": "2026-11-15T12:18:12.058Z",
+      "revision": 1,
+      "contentHash": "734635e82b35d1b4a1e7bdbad6f85b7d45e3c155a5dcf72ef07e23a5e8df5701",
+      "sizeBytes": 4944,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "8ce69397-7978-4b9b-a99d-15e8ae7c2da1",
+      "title": "正太音模拟器：自训男童 RVC 模型 + 1.5kHz 高频搁架，端到端验收与授权坑（2026-11-16）",
+      "description": "自训 shotaboys MLX 模型（仅解冻 emb_g 无效、--speaker-cond 才生效）、rvc_worker 固化 1.5kHz+6dB 搁架、A/B/C/D 四版 measure_voice 打分明细、默认参数与回退命令、macOS 文稿授权导致 RVC 超时的栈证据与排查法、ChildTalk 语料余量。",
+      "status": "active",
+      "filename": "rvc-1-5khz-2026-11-16-8ce69397.md",
+      "relativePath": "documents/active/rvc-1-5khz-2026-11-16-8ce69397.md",
+      "sourcePaths": [
+        "script/rvc_worker.py",
+        "script/rvc_engine.py",
+        "script/build_and_run.sh",
+        "script/measure_voice.py",
+        "Sources/VoiceAudio/RVCBackend.swift",
+        "demo/D-应用导出.wav",
+        "demo/C-训练男童模型.wav",
+        "demo/A-现在这版.wav"
+      ],
+      "sessionIds": [
+        "mnemon-run-v1-19c39de1-486d-408f-b6e8-08ed3403e0c1"
+      ],
+      "createdAt": "2026-11-15T21:47:49.089Z",
+      "updatedAt": "2026-11-15T21:47:49.089Z",
+      "lastAccessedAt": "2026-11-16T00:34:59.913Z",
+      "revision": 1,
+      "contentHash": "ca079c275edce30e33c96201303556cd943a9e3705808b56389e8135f23223fe",
+      "sizeBytes": 6853,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "efd777e4-d249-4d06-a85b-c58f4d7b51dc",
+      "title": "正太音 RVC/MLX 引擎保真度实测：电音非移植所致，9.5 半音拉音与共振峰旋钮失效",
+      "description": "同一模型同一输入的 MLX vs Applio 逐频段对照（±2 dB 内）、共振峰 formantScale 失效证据（F1/F2 实测）、去刺EQ/索引/f0平滑三组消融、A1/P1b/P2b 拉音幅度对照与「语速太快」踩坑、谱质心评分卡作废的教训。",
+      "status": "active",
+      "filename": "rvc-mlx-9-5-efd777e4.md",
+      "relativePath": "documents/active/rvc-mlx-9-5-efd777e4.md",
+      "sourcePaths": [
+        "zhengtai_rvc.py",
+        "demo/listen/A1-220-f100.wav",
+        "demo/listen/P1b-preshift-220-keep.wav",
+        "demo/listen/E2-noindex.wav"
+      ],
+      "sessionIds": [
+        "mnemon-run-v1-ebc7a382-fa66-4df6-b1ff-8950f06c1dd6"
+      ],
+      "createdAt": "2026-11-16T00:35:21.707Z",
+      "updatedAt": "2026-11-16T00:35:21.707Z",
+      "lastAccessedAt": "2026-11-16T00:35:21.707Z",
+      "revision": 1,
+      "contentHash": "0b36e79956fa8a204490ac6ff81db5d26d0716497ed455d79e88b57176987742",
+      "sizeBytes": 6640,
       "memoryBodyIds": []
     }
   ]
