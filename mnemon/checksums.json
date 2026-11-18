@@ -1,10 +1,10 @@
 {
   "algorithm": "sha256",
   "files": {
-    "payload/runtime/memories.json": "2a8e4c39a4696bda5e90e6ae9d34e0ff66e8ee54d3555f093d2a2342f4d1acc1",
+    "payload/runtime/memories.json": "58d8a7596b35cd99ef0befe75722ef7f2763c9ffdce7fdcdeb96a067fae356d0",
     "payload/runtime/USER.md": "b348f6d5559a29a7e64018890bf3bb62103e0e208be9e8acb35f5541c9cd5453",
     "payload/runtime/MEMORY.md": "3c961823b9b755457fcfc5f728d09551071e7bee23b7988178ce2878e412572b",
-    "payload/documents/index.json": "9b64f3b999fc1197dd969e20460b18a96b14c6e38810d97463f2117a56a5c654",
+    "payload/documents/index.json": "5f7687144cd848bc1d2ca58d0608f30e55395e308d067affc3163c0681005c86",
     "payload/documents/active/claude-splash-b05ca3a1.md": "bd5f32b2fed28cee0b0143727e64365f6939b9ac5bc993343f661fe50d630ab6",
     "payload/documents/active/claude-splash-a8ec51cb.md": "99eb72756d2a023eff76b4e3e48da7bcc789e9f92b769420a66b9543ddd333e0",
     "payload/documents/active/claude-splash-pass-fail-63c07518.md": "2573057f8fbf9c3145b1ee60d0c503840ccd991a607b1089f80fa50e5a35f937",
@@ -46,6 +46,7 @@
     "payload/documents/active/rvc-1-30-1-5khz-6db-childtalk-22gb-7105e37d.md": "0b33e08497d4f1fb2ea1fafb43439bf18c2c7786a74581b53651974468dba493",
     "payload/documents/active/rvc-1-5khz-2026-11-16-8ce69397.md": "24f48032d34116ef51acd2764923668d4bcdb44d7c97ec81d1758ecce341a383",
     "payload/documents/active/rvc-mlx-9-5-efd777e4.md": "a3fbeada555979d3935b51fb29bea2aec24a61d3f2cbef4f1ed8e14f032ec589",
+    "payload/documents/active/chatgpt-codex-openai-dfa4ac1e.md": "bf18b93598d980244c63d9506e9f99aaee6a012bacda0a039523356e5bd8be68",
     "payload/data/.dsh-memory-bodies.json": "3b06b68901e64a3e65280bafae51d87ace64afd24f3a20ea1481a108bec591f0",
     "payload/data/default/mnemon.db": "e03863a458a3bbdfa541a7e5f6f28cdf61191417f472ede2ef8ce6ee7a4bcff7"
   }

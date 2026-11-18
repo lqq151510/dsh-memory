@@ -2,7 +2,7 @@
   "format": "mnemonpack",
   "version": 1,
   "scope": "full",
-  "exportedAt": "2026-11-16T05:08:44.857Z",
+  "exportedAt": "2026-11-18T13:05:15.692Z",
   "source": {
     "plugin": "dsh-mnemon",
     "pluginVersion": "0.5.45"
@@ -21,9 +21,9 @@
     },
     {
       "component": "documents",
-      "files": 42,
-      "bytes": 268092,
-      "items": 41
+      "files": 43,
+      "bytes": 274950,
+      "items": 42
     },
     {
       "component": "memory-spaces",
@@ -36,10 +36,10 @@
     "channel": "git",
     "branch": "mnemon-sync",
     "subdir": "mnemon/",
-    "pushedAt": "2026-11-16T05:08:44.857Z",
+    "pushedAt": "2026-11-18T13:05:15.692Z",
     "machine": {
       "id": "f333f251-8471-4b17-8797-f691ca87c181",
-      "label": "MacBook-Pro-4150.local",
+      "label": "MacBook-Pro-4153.local",
       "createdAt": "2026-10-29T11:45:45.679Z"
     },
     "tombstones": [

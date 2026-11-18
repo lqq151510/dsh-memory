@@ -436,7 +436,7 @@
       ],
       "createdAt": "2026-11-03T10:58:03.058Z",
       "updatedAt": "2026-11-03T10:58:03.058Z",
-      "lastAccessedAt": "2026-11-04T08:39:48.998Z",
+      "lastAccessedAt": "2026-11-18T12:36:09.753Z",
       "revision": 1,
       "contentHash": "e341b5b44a552f64493840f5e7137cc455d65f14a037cdb46237d21589d3c166",
       "sizeBytes": 6750,
@@ -891,7 +891,7 @@
       ],
       "createdAt": "2026-11-15T09:41:47.810Z",
       "updatedAt": "2026-11-15T09:41:47.810Z",
-      "lastAccessedAt": "2026-11-16T00:34:59.913Z",
+      "lastAccessedAt": "2026-11-18T12:36:09.753Z",
       "revision": 1,
       "contentHash": "1ba37135cc909d62f7c58452acd2b7a97a50298dae6e37d81c896ac730275cbc",
       "sizeBytes": 9072,
@@ -971,6 +971,28 @@
       "revision": 1,
       "contentHash": "0b36e79956fa8a204490ac6ff81db5d26d0716497ed455d79e88b57176987742",
       "sizeBytes": 6640,
+      "memoryBodyIds": []
+    },
+    {
+      "id": "dfa4ac1e-558b-4124-a946-9b0a2bd15b11",
+      "title": "ChatGPT/Codex 桌面端断流排查：区分本地代理故障与 OpenAI 上游故障",
+      "description": "ChatGPT/Codex「Stream Disconnected」的分层取证顺序（OpenAI 状态页 → bili /__bili/overview alerts → codex 端点流式探针 → 桌面端 7896 连接数），本机 Clash Verge 代理事实（混合端口 7896、TUN/系统代理开启）与常见误判反例。",
+      "status": "active",
+      "filename": "chatgpt-codex-openai-dfa4ac1e.md",
+      "relativePath": "documents/active/chatgpt-codex-openai-dfa4ac1e.md",
+      "sourcePaths": [
+        ".dsh/skills/dsh-bili-upstream-proxy-fix/SKILL.md",
+        "Library/Application Support/io.github.clash-verge-rev.clash-verge-rev/verge.yaml"
+      ],
+      "sessionIds": [
+        "mnemon-run-v1-51d34620-10ee-48c9-ae0b-da6e895cccac"
+      ],
+      "createdAt": "2026-11-18T12:36:34.189Z",
+      "updatedAt": "2026-11-18T12:36:34.189Z",
+      "lastAccessedAt": "2026-11-18T12:36:34.189Z",
+      "revision": 1,
+      "contentHash": "450491fb58fd07d5e0516d49eb0bde312a846c238ff4d578f6b7326ca1be34a4",
+      "sizeBytes": 5649,
       "memoryBodyIds": []
     }
   ]
